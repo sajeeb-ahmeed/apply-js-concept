@@ -3,7 +3,7 @@ for (let i = 1; i <= 7; i++) {
     factorial = factorial * i;
 
 }
-console.log(factorial)
+// console.log(factorial)
 // factorial value assign 7! 
 // 1! = 1 x 1
 // 2! = 2 x 1 
@@ -13,7 +13,7 @@ console.log(factorial)
 // 6! = 6 x  5 x 4 x 3 x 2 x 1 
 // 7! + 7 x 6 x  5 x 4 x 3 x 2 x 1 
 
-// recalculate factorial multiple time  function
+// recalculate factorial multiple time  function in for loop
 
 function getFatcorial(number) {
     let factorial = 1;
@@ -23,7 +23,7 @@ function getFatcorial(number) {
     return factorial;
 }
 
-var myFact = 9;
+var myFact = 8;
 var sevenfact = getFatcorial(myFact);
 console.log(sevenfact);
 
@@ -33,4 +33,20 @@ console.log(fiveFact);
 
 let theirFact = 13;
 let thirtyFactorial = getFatcorial(theirFact);
-console.log(thirtyFactorial);
+console.log(' This factrials from for loop fact for 13 is ', thirtyFactorial);
+
+// recalculate factorial multiple time  function in while loop
+
+function fact(numbers) {
+    let factorials = 1;
+    var i = 1;
+    while (i <= numbers) {
+        factorials = factorials * i;
+        i++;
+    }
+    return factorials;
+}
+
+let test = 18;
+let getTest = fact(test);
+console.log(' This factrials from while loop fact for 18 is ', getTest)
