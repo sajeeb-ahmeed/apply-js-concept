@@ -111,14 +111,12 @@ let number1 = 6;
 let whilefacts = whileFact(number1);
 console.log('This Factorial Calculate by While loop  ', whilefacts);
 
-// celsius to farhenheit 
 
-let celsius = (prompt("Enter Celsius Value "));
-let convertTofarhen = (celsius * 9 / 5) + 32;
 
-console.log(celsius + '-deg Celcuis = ', convertTofarhen + '-deg farhenheit');
+function farhen(celsius) {
 
-// farhenheit to Celsius 
-let farhen = (prompt(" Enter a Value "));
-let cels = (farhen - 32) * 5 / 9;
-console.log(farhen + "- deg faehenheit =", cels + ' -deg celsius ');
+    let convertTofarhen = (celsius * 9 / 5) + 32;
+    return convertTofarhen;
+}
+var convertTofarhen = farhen(75);
+console.log("deg", convertTofarhen);
